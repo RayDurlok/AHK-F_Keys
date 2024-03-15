@@ -1,4 +1,4 @@
-This is a neat AHK script to utilise your F1-F12 keys to launch programs, websites and folder paths. 
+This is a neat AHK script to utilise your F1-F12 keys to launch programs, websites and folder paths. When you run it it will show up as a little desktop item on the right side of your taskbar. 
 I used scripts from https://autohotkey.com/board/topic/102127-navigating-explorer-directories/ and http://msdn.microsoft.com/en-us/library/bb774094 for the basic functions. 
 
 Use Hotkeys CTRL + I to insert your paths, website links or programm paths to launch them with your F Keys. 
