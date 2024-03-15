@@ -8,7 +8,7 @@ For websites just insert the links.
 For folder paths insert the path. 
 For programms use /pathtotheprogramm/nameoftheprogramm.exe (or other extensions)
 
-For suspending the hotkeys use the insert button+F12
+For suspending the hotkeys use the insert button.
 For exiting the script use CTRL + insert. 
 
 Feel free to further edit the script or give me feedback. 
