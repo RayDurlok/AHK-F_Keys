@@ -12,3 +12,5 @@ For suspending the hotkeys use the insert button+F12
 For exiting the script use CTRL + insert. 
 
 Feel free to further edit the script or give me feedback. 
+
+In order to run this script you need AHK to be installed, use https://www.autohotkey.com/ to download it.
