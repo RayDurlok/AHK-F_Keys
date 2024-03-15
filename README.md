@@ -14,3 +14,6 @@ For exiting the script use CTRL + insert.
 Feel free to further edit the script or give me feedback. 
 
 In order to run this script you need AHK to be installed, use https://www.autohotkey.com/ to download it.
+
+
+There is one additional function to insert your paths into the "save file as" or "save download" dialog. I will make a tutorial for that soon. Currently only works with Windows10 when you screenshot the little down arrow at the right side of the explorer window and save it under explorer1.png where the script is located. For an alternative appearance of the arrow use explorer2.png.
