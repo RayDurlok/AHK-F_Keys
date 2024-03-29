@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -15,17 +15,24 @@ Drive := A_WorkingDir
 ; Define the INI file path
 myinipath := A_WorkingDir . "\Storage.ini"
 
-CreateTheIni(mypath) {
+CreateTheIni(myinipath) {
     ; Check if the file already exists
-    if (!FileExist(mypath)) {
+    if (!FileExist(myinipath)) {
         ; If the file doesn't exist, create it
-        FileAppend,, %mypath%
+        FileAppend,, %myinipath%
+
+        ; Display the path to the INI file for debugging
+        ;MsgBox, The path to the INI file is: %myinipath%
+
+
     }
 }
 
 
+
 ; Hotkey to show the GUI (Strg+I)
 ^i::
+guiopen:
     Gui, destroy
     yPos := 20
 
@@ -56,8 +63,8 @@ variables := {"F1Key": "F1 Key","F2Key": "F2 Key","F3Key": "F3 Key","F4Key": "F4
 
     ; Add extra space for buttons
     yPos += 150
-    Gui, Add, Button, x82 y%yPos% w100 h30 gcreatetheini, Create ini
-    Gui, Add, Button, x202 y%yPos% w100 h30 gsavetoini, Save
+    ;Gui, Add, Button, x82 y%yPos% w100 h30 gcreatetheini, Create ini
+    Gui, Add, Button, x130 y%yPos% w100 h30 gsavetoini, Save
 
 
 
@@ -90,6 +97,7 @@ readtheini:
 Return
 
 savetoini:
+gosub, createtheini
     Gui, Submit  ; Retrieve the latest values from the GUI controls
     errorOccurred := false  ; Flag to track if any errors occurred during the loop
 
